@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOMA | Login</title>
+    <title>SOMA | Register</title>
     <link rel="stylesheet" href="soma.css">
     <link rel="shortcut icon" href="soma.png">
 </head>
@@ -16,21 +16,21 @@
                 <h3>SOMA</h3>
             </div>
             <div class="form-content">
-                <form action="">
+                <form action="data.php" method="post">
                 <div class="field">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
                 </div>
-                <input type="checkbox" class="checkbox"><b>Remember Me</b><br><br>
-                <button type="submit">
-                    Sign In
-                </button>  
+                <!---kbox" class="checkbox"><b>Remember Me</b><br><br---->
+                <input type="submit" name="submit" value="Sign Up">
+                 
             </div>
             <div class="extra">
-            <span>Don't have an account?</span>
+            <span>Already have an account?</span>
             <a href="#">
                 <button>
-                    Register
+                    Login
                 </button>
             </form>
             </a>
