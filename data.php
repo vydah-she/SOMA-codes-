@@ -36,16 +36,18 @@ if(isset($_POST["submit"])) {
 }
 
 //login process
-if(isset($_POST["submit"])) {
+if(isset($_POST["Log In"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
 $sql = "SELECT * FROM students WHERE email ='$email' AND password= '$password'";
+$hashed_pasword = password_hash($password,PASSWORD_DEFAULT);
 $result = mysqli_query($conn,$sql);
 if(mysqli_num_rows($result) == 1){
-    //header('location:soma.php');
+    header('location:home.php');
+}else{
+    echo "user already exists";
 }
-
 
 }
 

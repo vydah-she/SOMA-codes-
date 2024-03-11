@@ -30,7 +30,7 @@
             <span>Already have an account?</span>
             <a href="#">
                 <button>
-                    Login
+                    Register
                 </button>
             </form>
             </a>

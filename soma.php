@@ -22,13 +22,13 @@
                 <input type="password" placeholder="Password" name="password">
                 </div>
                 <input type="checkbox" class="checkbox"><b>Remember Me</b><br><br>
-                <input type="submit" name="submit" value="Sign Up">
+                <input type="submit" name="Log In" value="Log In">
             </div>
             <div class="extra">
             <span>Don't have an account?</span>
             <a href="#">
                 <button>
-                    Register
+                    Log In
                 </button>
             </form>
             </a>
